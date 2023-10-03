@@ -1,12 +1,18 @@
 import WorkPayCal from './WorkPayCal';
 import './App.css';
+import { Route, Routes,BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <h1>Testing</h1>
-      <WorkPayCal/>
+      <Routes>
+        <Route path="/" element={<WorkPayCal/>}/>
+      </Routes>
     </div>
+    </BrowserRouter>
+
   );
 }
 
